@@ -40,4 +40,4 @@ for filename in os.listdir(folder):
            
     
     tweetdf = pd.DataFrame(data,columns=['id', 'text', 'location','place','country','retweeted','retweet_count','favorited','favorite_count','language','date','verified'])
-    tweetdf.to_csv(f'hydrated_tweets/df{month}-{day}-{hour}.csv',sep=';',index=False,header=True,encoding='utf-8')
+    tweetdf.to_csv(f'hydrated_tweets/2020-{month}/df{month}-{day}-{hour}.csv',sep=';',index=False,header=True,encoding='utf-8')

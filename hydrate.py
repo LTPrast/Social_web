@@ -14,7 +14,7 @@ t_inst = Twarc(consumer_key,consumer_secret,access_token, access_token_secret)
 num_tweets=0
 test = 0
 # change this to different month such as 'tweets_ids/.../2020-10'
-folder = 'tweet_ids/us-pres-elections-2020/2020-11'
+folder = 'temp_tweet_id/us-pres-elections-2020/2020-10'
 for filename in os.listdir(folder):
     f = os.path.join(folder, filename)
     hour = filename[-6:-4]

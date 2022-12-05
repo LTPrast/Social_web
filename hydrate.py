@@ -17,11 +17,14 @@ test = 0
 folder = 'temp_tweet_id/2020-10/'
 for filename in os.listdir(folder):
     f = os.path.join(folder, filename)
+    if filename == '.DS_Store':
+        continue
     hour = filename[-6:-4]
     day = filename[-9:-7]
     month = filename[-12:-10]
     print(f)
     data = []
+
     for tweet in t_inst.hydrate(open(f)):
         num_tweets += 1
         # skips tweet if it doesn't have any location info 

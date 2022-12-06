@@ -15,6 +15,8 @@ num_tweets=0
 test = 0
 # change this to different month such as 'tweets_ids/.../2020-10'
 
+
+
 folder = 'temp_tweet_id/2020-10/'
 for filename in os.listdir(folder):
     hour = filename[-6:-4]

@@ -23,6 +23,7 @@ for filename in os.listdir(folder):
     day = filename[-9:-7]
     month = filename[-12:-10]
     if day == '22' and hour > 12:
+    if day == '22' and hour > '21':
         f = os.path.join(folder, filename)
         print(f)
         data = []
